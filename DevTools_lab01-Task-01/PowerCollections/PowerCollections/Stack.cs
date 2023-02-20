@@ -12,7 +12,7 @@ namespace Welp.PowerCollections
 
         T[] values;
 
-        public Stack(int arrSize = 0)
+        public Stack(int arrSize = 100)
         {
             if (arrSize < 0)
                 throw new InvalidOperationException("Введено отрицательное значение параметра");

@@ -1,6 +1,11 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
+    <PackageId>Krylov_Grigorii.PowerCollections</PackageId>
+    <Version>0.0.2-beta</Version>
+    <Authors>Krylov Grigorii</Authors>
+    <Copyright>Copyright (c) 2023, Krylov</Copyright>
+    <RepositoryUrl>https://github.com/Shigarasaki/DevTools_lab02.git</RepositoryUrl>
 		<TargetFramework>netstandard2.1</TargetFramework>
 		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
 		<Deterministic>false</Deterministic>
