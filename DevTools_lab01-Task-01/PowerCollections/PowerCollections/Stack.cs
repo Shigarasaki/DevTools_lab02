@@ -8,7 +8,7 @@ namespace Welp.PowerCollections
     public class Stack<T> : IEnumerable<T>
     {
         public int Count { get; set; }
-        public int Capacity { get; 
+        public int Capacity { get; }
 
         T[] values;
 
