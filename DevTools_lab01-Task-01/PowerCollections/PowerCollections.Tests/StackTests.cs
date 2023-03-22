@@ -27,7 +27,7 @@ namespace Welp.PowerCollections.Tests
             tests.Push(1);
             tests.Push(2);
 
-            Assert.AreEqual(7, tests.Count); // Ожидается 2, потому что в стек передано 2 значения
+            Assert.AreEqual(2, tests.Count); // Ожидается 2, потому что в стек передано 2 значения
         }
 
 
