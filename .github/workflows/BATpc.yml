@@ -19,9 +19,11 @@ jobs:
       uses: actions/setup-dotnet@v3.0.3
       with:
         dotnet-version: 6.0.x
-    
+    - name: Restore
+      run: dotnet restore
+      working-directory: DevTools_lab01-Task-01\PowerCollections
     - name: Build project
-      run: dotnet build
+      run: dotnet build -no-restore
       working-directory: DevTools_lab01-Task-01\PowerCollections
     - name: Execute tests
       run: dotnet test —no-build
