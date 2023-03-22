@@ -2,7 +2,7 @@
 
 	<PropertyGroup>
     <PackageId>Krylov_Grigorii.PowerCollections</PackageId>
-    <Version>0.0.2-beta</Version>
+    <Version>0.0.3-beta</Version>
     <Authors>Krylov Grigorii</Authors>
     <Copyright>Copyright (c) 2023, Krylov</Copyright>
     <RepositoryUrl>https://github.com/Shigarasaki/DevTools_lab02.git</RepositoryUrl>

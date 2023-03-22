@@ -1,0 +1,27 @@
+name: Build and test PC
+
+on: push
+
+jobs:
+
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+
+    - name: Checkout
+      uses: actions/checkout@v3
+      with:
+        fetch-depth: 0
+      
+    - name: Install
+      uses: actions/setup-dotnet@v3.0.3
+      with:
+        dotnet-version: 6.0.x
+    - name: Build project
+      run: dotnet build
+      working-directory: DevTools_lab01-Task-01\PowerCollections
+    - name: Execute tests
+      run: dotnet test --no-build
+      working-directory: DevTools_lab01-Task-01\PowerCollections
