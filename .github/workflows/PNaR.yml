@@ -6,6 +6,11 @@ jobs:
   nuget_release:
 
     runs-on: windows-latest
+    
+    permissions:
+      repository-projects: write
+      packages: write
+      contents: write
 
     steps:
 
