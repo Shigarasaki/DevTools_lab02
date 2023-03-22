@@ -4,6 +4,7 @@ using System.Collections;
 using System.Globalization;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using static System.Net.Mime.MediaTypeNames;
+using System.Linq;
 
 namespace Welp.PowerCollections.Tests
 {
