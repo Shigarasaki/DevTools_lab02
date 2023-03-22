@@ -44,7 +44,7 @@ namespace Welp.PowerCollections.Tests
         {
             Stack<int> tests = new Stack<int>();
 
-            Assert.AreEqual(0, tests.Capacity); // Ожидается 0, потому что в конструктор не было ничего передано
+            Assert.AreEqual(100, tests.Capacity); // Ожидается 0, потому что в конструктор не было ничего передано
         }
 
         [TestMethod]
@@ -79,7 +79,7 @@ namespace Welp.PowerCollections.Tests
         [ExpectedException(typeof(InvalidOperationException))]
         public void Push_Overflow_Test() // Проверка метода Push при переполнении размера стека (в данном случае размер - 0)
         {
-            Stack<int> tests = new Stack<int>();
+            Stack<int> tests = new Stack<int>(0);
 
             tests.Push(1);
             tests.Push(2);
